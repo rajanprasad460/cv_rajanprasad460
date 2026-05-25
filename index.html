@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajan Prasad, Ph.D. | CV</title>
+  <meta name="description" content="Academic CV of Rajan Prasad, Ph.D. - Robotics, autonomous systems, biomechanics, and human-centered AI." />
+
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --paper: #ffffff;
+      --text: #1f2933;
+      --muted: #52616b;
+      --line: #c9d1d9;
+      --accent: #0f4c81;
+      --accent-soft: #e8f1f8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+	  text-align: justify;
+    }
+
+	.page {
+	  width: 210mm;
+	  min-height: 297mm;
+
+	  margin: 12px auto;
+	  padding: 12mm 14mm;
+
+	  background: white;
+	  color: #000;
+
+	  box-shadow: 0 0 20px rgba(0,0,0,0.12);
+	}
+
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+      padding-bottom: 18px;
+      border-bottom: 2px solid var(--line);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 5vw, 3rem);
+      letter-spacing: 0.02em;
+      color: #111827;
+    }
+
+    .contact {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-top: 28px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin: 0 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1.5px solid var(--line);
+      color: #111827;
+    }
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    ul {
+      margin: 8px 0 0 22px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    .entry {
+      margin-bottom: 18px;
+    }
+
+    .entry-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: baseline;
+      font-weight: 700;
+    }
+
+    .date {
+      white-space: nowrap;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .institution,
+    .subtext {
+      color: var(--muted);
+    }
+
+    
+
+    .publication-list li {
+      margin-bottom: 12px;
+    }
+
+    
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    footer {
+      margin-top: 36px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .page {
+        box-shadow: none;
+        margin: 0;
+        max-width: none;
+        border-radius: 0;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        margin: 0;
+        padding: 30px 22px;
+        border-radius: 0;
+		text-align: justify;
+      }
+
+      .entry-head {
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .date {
+        white-space: normal;
+      }
+
+      .metrics,
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+    }
+	
+	@media print {
+	  body {
+		background: white;
+	  }
+
+	  .page {
+		width: 210mm;
+		min-height: 297mm;
+		margin: 0;
+		box-shadow: none;
+	  }
+	}	
+	
+		
+	.scholar-table {
+	  width: 100%;
+	  border-collapse: collapse;
+	  margin-bottom: 24px;
+	}
+
+	.scholar-table thead {
+	  border-top: 1px solid #ccc;
+	  border-bottom: 1px solid #ccc;
+	}
+
+	.scholar-table th,
+	.scholar-table td {
+	  padding: 6px 10px;
+	}
+
+	.scholar-table th:not(:first-child),
+	.scholar-table td:not(:first-child) {
+	  text-align: center;
+	}
+
+	#citationChart {
+	  max-height: 260px;
+	  margin-bottom: 28px;
+	}
+
+	.paper-entry {
+	  margin-bottom: 18px;
+	}
+
+	.paper-entry pre {
+	  background: #f5f5f5;
+	  padding: 12px;
+	  overflow-x: auto;
+	  font-size: 0.85rem;
+	  border-left: 3px solid #999;
+	}
+	
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Rajan Prasad, Ph.D.</h1>
+      <div class="contact">
+        Address: Simraungadh, Bara, Madesh Province, Nepal<br />
+        Phone: <a href="tel:+9779848305168">+977-9848305168</a>, <a href="tel:+971501240069">+971-501240069</a><br />
+        Email: <a href="mailto:rajanprasad460@hotmail.com">rajanprasad460@hotmail.com</a> ,<a href="mailto:contact@rajan-prasad.com.np">contact@rajan-prasad.com.np</a><br />
+        Website: <a href="https://rajan-prasad.com.np">rajan-prasad.com.np</a><br />
+        GitHub: <a href="https://github.com/rajanprasad460">github.com/rajanprasad460</a><br />
+        ORCID: 0000-0003-3091-7138 &nbsp; | &nbsp; Scopus ID: 57212165779
+      </div>
+    </header>
+
+    <section>
+      <h2>Research Summary</h2>
+      <p>I am an interdisciplinary researcher working at the intersection of <strong>intelligent autonomous systems, robotics, biomechanics, and human-centered AI</strong>. My research focuses on developing <strong>adaptive robotic systems</strong> capable of interacting with complex environments and human users through advanced control, sensing, and learning frameworks.</p>
+      <ul>
+        <li>Autonomous robotic systems, including UGVs and manipulators</li>
+        <li>Bio-inspired and soft robotics, including continuum manipulators</li>
+        <li>Wearable robotics and rehabilitation systems</li>
+        <li>Biosignal-driven human-in-the-loop control systems</li>
+      </ul>
+      <p><strong>Long-term goal:</strong> To establish a research program on intelligent autonomous systems integrating <strong>AI, multimodal sensing, dynamics &amp; control, and human-robot collaboration</strong>.</p>
+    </section>
+
+    <section>
+      <h2>Research Interests</h2>
+      <p>
+        Intelligent Autonomous Systems; Robotics Design, Dynamics and Control; Bio-inspired Robotics; Soft Robotics; Human-Robot Interaction; Wearable Robotics; AI-driven Control; Sensor Fusion
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-head"><span>Ph.D. in Mechanical Engineering</span><span class="date">09/2019–07/2023</span></div>
+        <div class="institution">Khalifa University, UAE</div>
+        <div>GPA: 3.97/4.00</div>
+        <div>Thesis: Development of Innovative Biorobotic Assistive Exoskeletons for Stroke Patients Rehabilitation</div>
+      </div>
+      <div class="entry">
+        <div class="entry-head"><span>M.E. in Mechanical Engineering</span><span class="date">09/2017–06/2019</span></div>
+        <div class="institution">Beijing Institute of Technology, China</div>
+        <div>Thesis: Real-time torque vectoring control of an off-road UGV with multi-complex nonlinear constraints</div>
+      </div>
+      <div class="entry">
+        <div class="entry-head"><span>B.E. in Mechanical Engineering</span><span class="date">09/2012–12/2016</span></div>
+        <div class="institution">Tribhuvan University, Nepal</div>
+        <div>Topper, First Division</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <div class="entry">
+        <div class="entry-head"><span>Postdoctoral Fellow, Mechanical &amp; Robotics</span><span class="date">07/2024–02/2026</span></div>
+        <div class="institution">Khalifa University, UAE</div>
+        <ul>
+          <li>Development of bio-inspired underwater robot for deep sea inspection and machining operation</li>
+          <li>Generalized dynamic modeling framework for multi-link robotic systems</li>
+          <li>Focus on real-time control and autonomous manipulation</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-head"><span>Postdoctoral Fellow, Biomedical Systems</span><span class="date">11/2023–06/2024</span></div>
+        <div class="institution">Khalifa University, UAE</div>
+        <ul>
+          <li>Biosignal acquisition and analysis, including EEG, ECG, PPG, and EDR estimation algorithms</li>
+          <li>Development of adaptive biofeedback and human-state-aware systems</li>
+          <li>Applications in rehabilitation engineering and neuroscience</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Key Research Contributions</h2>
+      <div class="entry">
+        <strong>Autonomous Systems and Control</strong>
+        <ul>
+          <li>Developed coordinated control strategies for unmanned ground vehicles</li>
+          <li>Addressed nonlinear constraints and real-time control challenges</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <strong>Bio-inspired Robotics</strong>
+        <ul>
+          <li>Designed cable-driven continuum and elephant trunk-inspired manipulators</li>
+          <li>Proposed generalized modeling frameworks for flexible robotic systems</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <strong>Human-Centered Robotics</strong>
+        <ul>
+          <li>Developed C-LREX, a cable-driven lower limb rehabilitation exoskeleton</li>
+          <li>Integrated biomechanics and control for stroke rehabilitation</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+      <h3>Journal Articles</h3>
+      <ul class="publication-list">
+        <li><strong>Prasad, R.</strong>, El-Rich, M., Awad, M. I., Khalaf, K. <em>Simulation of Stroke Gait Impairment Correction Using C-LREX</em>. Wearable Technologies, 2025.</li>
+        <li><strong>Prasad, R.</strong>, El-Rich, M., Awad, M. I., Agrawal, S. K., Khalaf, K. <em>Muscle-inspired Bi-planar Cable Routing Framework for Designing C-LREX</em>. Scientific Reports, 2024.</li>
+        <li><strong>Prasad, R.</strong>, El-Rich, M., Awad, M. I., Agrawal, S. K., Khalaf, K. <em>Bi-Planar Trajectory Tracking with a Novel 3DOF Cable-Driven Lower Limb Rehabilitation Exoskeleton</em>. Sensors, 2023.</li>
+        <li><strong>Prasad, R.</strong> et al. <em>A Framework for Determining the Performance and Requirements of Cable-Driven Mobile Lower Limb Rehabilitation Exoskeletons</em>. Frontiers in Bioengineering and Biotechnology, 2022.</li>
+        <li>Seena Joseph, Wai Keung Fung, Tony Punnoose Valayil, <strong>Prasad, R.</strong>, Tim Bashford. <em>A Systematic Literature Review on Intelligent Soft Hand Exoskeleton Robots</em>. Robotics, 2026.</li>
+        <li><strong>Prasad, R.</strong>, Ma, Y., Wang, Y., Zhang, H. <em>Hierarchical Coordinated Control Distribution and Experimental Verification for Six-Wheeled Unmanned Ground Vehicles</em>. Proc. IMechE Part D: Journal of Automobile Engineering, 2020.</li>
+      </ul>
+
+      <h3>Conference Papers</h3>
+      <ul class="publication-list">
+        <li><strong>Prasad, R.</strong>, Rosyid, A., Renda, F., El-Khasawneh, B. <em>Cable-Driven Elephant Trunk-Inspired Robot: Analytical Derivatives and Computational Insights</em>. IEEE AIRC, 2025.</li>
+        <li>Ihsan Khan, M. S. et al. <em>Baevsky’s Stress Index as a Sensitive Indicator for Biofeedback Efficacy</em>. IEEE EMBC, 2024.</li>
+        <li><strong>Prasad, R.</strong>, Nasrat, S., Dimassi, Z., Alefishat, E., Jelinek, H. F. <em>Participants Tend to Synchronize with the Tibetan Singing Bowl</em>. IEEE ESGCO, 2024.</li>
+        <li><strong>Prasad, R.</strong>, Khalaf, K., Awad, M. I., El-Rich, M. <em>Influence of Controller on Cable-Driven Lower Limb Rehabilitation Exoskeleton: PD vs MPC</em>. IEEE CoDIT, 2023.</li>
+        <li><strong>Prasad, R.</strong> et al. <em>A Generalized Framework for Cable-Driven Mobile Lower Limb Rehabilitation Exoskeletons</em>. ACM ICBET, 2022.</li>
+        <li><strong>Prasad, R.</strong>, Ma, Y. <em>Hierarchical Control Coordination Strategy of Six-Wheeled Independent Drive Skid-Steering Vehicle</em>. IFAC-PapersOnLine, 2019.</li>
+      </ul>
+
+      <h3>Under Review / Submitted</h3>
+      <ul class="publication-list">
+        <li><strong>Prasad, R.</strong>, Rosyid, A., Renda, F., El-Khasawneh, B. <em>A Crawling Robot for Underwater Applications</em>. IP Application, 2026.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Research Metrics</h2>
+      <p>Publications: 15+</p>
+      <p>Q1 Journal Papers: 6+</p>
+      <p>IEEE/ACM Conference Papers: Multiple</p>
+    </section>
+
+    <section>
+      <h2>Selected Research Projects</h2>
+      <ul>
+        <li>C-LREX: Cable-driven lower limb rehabilitation exoskeleton simulation framework</li>
+        <li>Elephant trunk-inspired continuum robotic manipulator and deepsea inspection robot</li>
+        <li>Biofeedback-based stress analysis system using physiological signals</li>
+        <li>Control co-ordination of AWID UGV</li>
+      </ul>
+    </section>
+
+    <section class="two-column">
+      <div>
+        <h2>Honors and Awards</h2>
+        <p>Distinguished International Student Award, China</p>
+        <p>Chinese Government Scholarship, CSC</p>
+        <p>Best Paper Awards: ICBET 2022 and 2023</p>
+      </div>
+      <div>
+        <h2>Academic Service</h2>
+        <p>Technical Committee Member: IEEE conferences</p>
+        <p>Scientific Committee Member: BIOMED 2026</p>
+        <p>Organizer: RoboticsAI 2026</p>
+        <p>Invited Speaker: UK and South Korea</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <p>MATLAB/Simulink, ABAQUS, ADAMS, Python, C, CATIA, CREO, ROS</p>
+      <p>Robotics, Control Systems, Multibody Dynamics, Biosignal Analysis</p>
+    </section>
+
+    <section>
+      <h2>International Experience</h2>
+      <p>UAE: Ph.D. and Postdoctoral Research &nbsp; | &nbsp; China: Master’s Degree &nbsp; | &nbsp; Nepal: Undergraduate Degree</p>
+    </section>
+
+    <section>
+      <h2>References</h2>
+      <div class="two-column">
+        <div>
+          <strong>Dr. Marwan El-Rich</strong><br />
+          Associate Professor, Department of Mechanical Engineering<br />
+          Khalifa University, Abu Dhabi, UAE<br />
+          Email: <a href="mailto:marwan.elrich@ku.ac.ae">marwan.elrich@ku.ac.ae</a>
+        </div>
+        <div>
+          <strong>Dr. Ma Yue</strong><br />
+          Associate Professor, Department of Mechanical Engineering<br />
+          Beijing Institute of Technology, Beijing, China<br />
+          Email: <a href="mailto:armcynicism@bit.edu.cn">armcynicism@bit.edu.cn</a>
+        </div>
+		        <div>
+          <strong>Dr. Kinda Khalaf</strong><br />
+           Associate Professor & Associate Chair <br />
+          Department of Biomedical Engineering, Khalifa University, Abu Dhabi, UAE<br />
+          Email: <a href="mailto:kinda.khalaf@ku.ac.ae">kinda.khalaf@ku.ac.ae</a>
+        </div>
+		        <div>
+          <strong>Dr. Bashar El-Khasawneh </strong><br />
+           Professor of Practice<br />
+          Department of Mechanical & Nuclear Engineering , Khalifa University, Abu Dhabi, UAE<br />
+          Email: <a href="mailto:bashar.khasawneh@ku.ac.ae">bashar.khasawneh@ku.ac.ae</a>
+        </div>
+		
+      </div>
+    </section>
+	
+	
+<section>
+  <h2>Google Scholar Profile</h2>
+
+  <h3>Cited by</h3>
+
+  <table class="scholar-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>All</th>
+        <th>Since 2021</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Citations</td>
+        <td id="citations-all">--</td>
+        <td id="citations-since">--</td>
+      </tr>
+
+      <tr>
+        <td>h-index</td>
+        <td id="h-all">--</td>
+        <td id="h-since">--</td>
+      </tr>
+
+      <tr>
+        <td>i10-index</td>
+        <td id="i10-all">--</td>
+        <td id="i10-since">--</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Citations per year</h3>
+
+  <canvas id="citationChart"></canvas>
+
+
+  <h3>Publications from Google Scholar</h3>
+
+  <div id="papers-container"></div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+fetch("./scholar.json")
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("citations-all").textContent = data.citations.all;
+    document.getElementById("citations-since").textContent = data.citations.since_2021;
+
+    document.getElementById("h-all").textContent = data.h_index.all;
+    document.getElementById("h-since").textContent = data.h_index.since_2021;
+
+    document.getElementById("i10-all").textContent = data.i10_index.all;
+    document.getElementById("i10-since").textContent = data.i10_index.since_2021;
+
+    const years = Object.keys(data.citations_per_year);
+    const counts = Object.values(data.citations_per_year);
+
+    new Chart(document.getElementById("citationChart"), {
+      type: "bar",
+      data: {
+        labels: years,
+        datasets: [{
+          data: counts,
+          backgroundColor: "#777",
+          borderColor: "#777",
+          borderWidth: 1,
+          barPercentage: 0.45
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false }
+        },
+        scales: {
+          x: {
+            grid: { display: false }
+          },
+          y: {
+            position: "right",
+            beginAtZero: true,
+            grid: { color: "#ddd" }
+          }
+        }
+      }
+    });
+
+    const container = document.getElementById("papers-container");
+
+    data.papers.forEach(paper => {
+      const div = document.createElement("div");
+      div.className = "paper-entry";
+
+      div.innerHTML = `
+        <p>
+          <strong>${paper.title}</strong><br>
+          ${paper.authors}<br>
+          <em>${paper.venue}</em>, ${paper.year}<br>
+          Citations: ${paper.citations}
+          ${paper.url ? `<br><a href="${paper.url}" target="_blank">View on Scholar</a>` : ""}
+        </p>
+
+        <details>
+          <summary>BibTeX</summary>
+          <pre>${paper.bibtex || "BibTeX not available"}</pre>
+        </details>
+      `;
+
+      container.appendChild(div);
+    });
+
+
+
+  });
+</script>
+
+
+
+
+
+    <footer>
+      © 2026 Rajan Prasad. Academic CV website.
+    </footer>
+  </main>
+</body>
+</html>

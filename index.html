@@ -285,6 +285,54 @@
 	  border: 1px solid #ddd;
 	}
 	
+	
+	
+.reference-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.reference-card {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+
+  padding: 14px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  background: #fafafa;
+}
+
+.ref-logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.reference-card a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.reference-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+
+  .reference-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reference-card {
+    flex-direction: row;
+  }
+}
+	
   </style>
 </head>
 <body>
@@ -611,36 +659,87 @@
   </div>
 </section>
 
-    <section>
-      <h2>References</h2>
-      <div class="two-column">
-        <div>
-          <strong>Dr. Marwan El-Rich</strong><br />
-          Associate Professor, Department of Mechanical Engineering<br />
-          Khalifa University, Abu Dhabi, UAE<br />
-          Email: <a href="mailto:marwan.elrich@ku.ac.ae">marwan.elrich@ku.ac.ae</a>
-        </div>
-        <div>
-          <strong>Dr. Ma Yue</strong><br />
-          Associate Professor, Department of Mechanical Engineering<br />
-          Beijing Institute of Technology, Beijing, China<br />
-          Email: <a href="mailto:armcynicism@bit.edu.cn">armcynicism@bit.edu.cn</a>
-        </div>
-		        <div>
-          <strong>Dr. Kinda Khalaf</strong><br />
-           Associate Professor & Associate Chair <br />
-          Department of Biomedical Engineering, Khalifa University, Abu Dhabi, UAE<br />
-          Email: <a href="mailto:kinda.khalaf@ku.ac.ae">kinda.khalaf@ku.ac.ae</a>
-        </div>
-		        <div>
-          <strong>Dr. Bashar El-Khasawneh </strong><br />
-           Professor of Practice<br />
-          Department of Mechanical & Nuclear Engineering , Khalifa University, Abu Dhabi, UAE<br />
-          Email: <a href="mailto:bashar.khasawneh@ku.ac.ae">bashar.khasawneh@ku.ac.ae</a>
-        </div>
-		
+<section>
+  <h2>References</h2>
+
+  <div class="reference-grid">
+
+    <div class="reference-card">
+      <img src="assets/ku.png" class="ref-logo" alt="KU" />
+
+      <div>
+        <strong>Dr. Marwan El-Rich</strong><br>
+        Associate Professor<br>
+        Department of Mechanical Engineering<br>
+        Khalifa University, UAE<br>
+        Phone: +971 2 312 4193<br>
+        <a href="mailto:marwan.elrich@ku.ac.ae">
+          marwan.elrich@ku.ac.ae
+        </a>
       </div>
-    </section>
+    </div>
+
+    <div class="reference-card">
+      <img src="assets/ku.png" class="ref-logo" alt="KU" />
+
+      <div>
+        <strong>Dr. Kinda Khalaf</strong><br>
+        Associate Professor & Associate Chair<br>
+        Department of Biomedical Engineering<br>
+        Khalifa University, UAE<br>
+        Phone: +971 2 312 3948<br>
+        <a href="mailto:kinda.khalaf@ku.ac.ae">
+          kinda.khalaf@ku.ac.ae
+        </a>
+      </div>
+    </div>
+
+    <div class="reference-card">
+      <img src="assets/ku.png" class="ref-logo" alt="KU" />
+
+      <div>
+        <strong>Dr. Bashar El-Khasawneh</strong><br>
+        Professor of Practice<br>
+        Department of Mechanical & Nuclear Engineering<br>
+        Khalifa University, UAE<br>
+		Phone: +971 2 312 4157<br>
+        <a href="mailto:bashar.khasawneh@ku.ac.ae">
+          bashar.khasawneh@ku.ac.ae
+        </a>
+      </div>
+    </div>
+
+    <div class="reference-card">
+      <img src="assets/bit.png" class="ref-logo" alt="BIT" />
+
+      <div>
+        <strong>Dr. Ma Yue</strong><br>
+        Associate Professor<br>
+        Beijing Institute of Technology, China<br>
+        Phone: +86-1068918489<br>
+        <a href="mailto:armcynicism@bit.edu.cn">
+          armcynicism@bit.edu.cn
+        </a>
+      </div>
+    </div>
+
+    <div class="reference-card">
+      <img src="assets/tu.png" class="ref-logo" alt="TU" />
+
+      <div>
+        <strong>Er. Bijendra Prajapati</strong><br>
+        Assistant Professor<br>
+		 Department of Mechanical Engineering<br>
+        IOE Pulchowk Campus, Nepal<br>
+        Phone: +977-9841543132<br>
+        <a href="mailto:bijendra.prajapati@pcampus.edu.np">
+          bijendra.prajapati@pcampus.edu.np
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
 	
 	
 <section>

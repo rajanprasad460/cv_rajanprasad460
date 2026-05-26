@@ -337,21 +337,22 @@
       <h2>Publications</h2>
       <h3>Journal Articles</h3>
       <ul class="publication-list">
-        <li><strong>Prasad, R.</strong>, El-Rich, M., Awad, M. I., Khalaf, K. <em>Simulation of Stroke Gait Impairment Correction Using C-LREX</em>. Wearable Technologies, 2025.</li>
-        <li><strong>Prasad, R.</strong>, El-Rich, M., Awad, M. I., Agrawal, S. K., Khalaf, K. <em>Muscle-inspired Bi-planar Cable Routing Framework for Designing C-LREX</em>. Scientific Reports, 2024.</li>
-        <li><strong>Prasad, R.</strong>, El-Rich, M., Awad, M. I., Agrawal, S. K., Khalaf, K. <em>Bi-Planar Trajectory Tracking with a Novel 3DOF Cable-Driven Lower Limb Rehabilitation Exoskeleton</em>. Sensors, 2023.</li>
-        <li><strong>Prasad, R.</strong> et al. <em>A Framework for Determining the Performance and Requirements of Cable-Driven Mobile Lower Limb Rehabilitation Exoskeletons</em>. Frontiers in Bioengineering and Biotechnology, 2022.</li>
-        <li>Seena Joseph, Wai Keung Fung, Tony Punnoose Valayil, <strong>Prasad, R.</strong>, Tim Bashford. <em>A Systematic Literature Review on Intelligent Soft Hand Exoskeleton Robots</em>. Robotics, 2026.</li>
-        <li><strong>Prasad, R.</strong>, Ma, Y., Wang, Y., Zhang, H. <em>Hierarchical Coordinated Control Distribution and Experimental Verification for Six-Wheeled Unmanned Ground Vehicles</em>. Proc. IMechE Part D: Journal of Automobile Engineering, 2020.</li>
+        <li><strong>Prasad, R.</strong>, El-Rich, M., Awad, M. I., Khalaf, K. <em>Simulation of Stroke Gait Impairment Correction Using C-LREX</em>. Wearable Technologies, 2025. <strong> [Q1]</strong></li>
+        <li><strong>Prasad, R.</strong>, El-Rich, M., Awad, M. I., Agrawal, S. K., Khalaf, K. <em>Muscle-inspired Bi-planar Cable Routing Framework for Designing C-LREX</em>. Scientific Reports, 2024.<strong> [Q1]</strong></li>
+        <li><strong>Prasad, R.</strong>, El-Rich, M., Awad, M. I., Agrawal, S. K., Khalaf, K. <em>Bi-Planar Trajectory Tracking with a Novel 3DOF Cable-Driven Lower Limb Rehabilitation Exoskeleton</em>. Sensors, 2023.<strong> [Q1]</strong></li>
+        <li><strong>Prasad, R.</strong> et al. <em>A Framework for Determining the Performance and Requirements of Cable-Driven Mobile Lower Limb Rehabilitation Exoskeletons</em>. Frontiers in Bioengineering and Biotechnology, 2022.<strong> [Q1]</strong></li>
+        <li>Seena Joseph, Wai Keung Fung, Tony Punnoose Valayil, <strong>Prasad, R.</strong>, Tim Bashford. <em>A Systematic Literature Review on Intelligent Soft Hand Exoskeleton Robots</em>. Robotics, 2026.<strong>Q1</strong></li>
+        <li><strong>Prasad, R.</strong>, Ma, Y., Wang, Y., Zhang, H. <em>Hierarchical Coordinated Control Distribution and Experimental Verification for Six-Wheeled Unmanned Ground Vehicles</em>. Proc. IMechE Part D: Journal of Automobile Engineering, 2020.<strong> [Q2]</strong></li>
       </ul>
 
       <h3>Conference Papers</h3>
       <ul class="publication-list">
         <li><strong>Prasad, R.</strong>, Rosyid, A., Renda, F., El-Khasawneh, B. <em>Cable-Driven Elephant Trunk-Inspired Robot: Analytical Derivatives and Computational Insights</em>. IEEE AIRC, 2025.</li>
-        <li>Ihsan Khan, M. S. et al. <em>Baevsky’s Stress Index as a Sensitive Indicator for Biofeedback Efficacy</em>. IEEE EMBC, 2024.</li>
+        <li>Ihsan Khan, M. S., <strong>Prasad, R.</strong> et al. <em>Baevsky’s Stress Index as a Sensitive Indicator for Biofeedback Efficacy</em>. IEEE EMBC, 2024.</li>
         <li><strong>Prasad, R.</strong>, Nasrat, S., Dimassi, Z., Alefishat, E., Jelinek, H. F. <em>Participants Tend to Synchronize with the Tibetan Singing Bowl</em>. IEEE ESGCO, 2024.</li>
         <li><strong>Prasad, R.</strong>, Khalaf, K., Awad, M. I., El-Rich, M. <em>Influence of Controller on Cable-Driven Lower Limb Rehabilitation Exoskeleton: PD vs MPC</em>. IEEE CoDIT, 2023.</li>
-        <li><strong>Prasad, R.</strong> et al. <em>A Generalized Framework for Cable-Driven Mobile Lower Limb Rehabilitation Exoskeletons</em>. ACM ICBET, 2022.</li>
+        <li><strong>Prasad, R.</strong> et al. <em>Assisting Stroke Gait with Cable Driven Lower Limb Rehabilitation Exoskeleton (C-LREX): Simulation Study</em>. ACM ICBET, 2023.</li>
+		<li><strong>Prasad, R.</strong> et al. <em>A Generalized Framework for Cable-Driven Mobile Lower Limb Rehabilitation Exoskeletons</em>. ACM ICBET, 2022.</li>
         <li><strong>Prasad, R.</strong>, Ma, Y. <em>Hierarchical Control Coordination Strategy of Six-Wheeled Independent Drive Skid-Steering Vehicle</em>. IFAC-PapersOnLine, 2019.</li>
       </ul>
 
@@ -476,8 +477,10 @@
 
   <canvas id="citationChart"></canvas>
 
-
+<!--
   <h3>Publications from Google Scholar</h3>
+-->
+
 
   <div id="papers-container"></div>
 </section>
@@ -487,6 +490,7 @@
 fetch("./scholar.json")
   .then(response => response.json())
   .then(data => {
+    // Citation details
     document.getElementById("citations-all").textContent = data.citations.all;
     document.getElementById("citations-since").textContent = data.citations.since_2021;
 
@@ -496,39 +500,64 @@ fetch("./scholar.json")
     document.getElementById("i10-all").textContent = data.i10_index.all;
     document.getElementById("i10-since").textContent = data.i10_index.since_2021;
 
+    // Citation graph
     const years = Object.keys(data.citations_per_year);
     const counts = Object.values(data.citations_per_year);
 
-    new Chart(document.getElementById("citationChart"), {
-      type: "bar",
-      data: {
-        labels: years,
-        datasets: [{
-          data: counts,
-          backgroundColor: "#777",
-          borderColor: "#777",
-          borderWidth: 1,
-          barPercentage: 0.45
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: { display: false }
+    const chartCanvas = document.getElementById("citationChart");
+
+    if (chartCanvas) {
+      new Chart(chartCanvas, {
+        type: "bar",
+        data: {
+          labels: years,
+          datasets: [{
+            label: "Citations",
+            data: counts,
+            backgroundColor: "#777",
+            borderColor: "#777",
+            borderWidth: 1,
+            barPercentage: 0.45
+          }]
         },
-        scales: {
-          x: {
-            grid: { display: false }
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: context => `Citations: ${context.raw}`
+              }
+            }
           },
-          y: {
-            position: "right",
-            beginAtZero: true,
-            grid: { color: "#ddd" }
+          scales: {
+            x: {
+              title: {
+                display: true,
+                text: "Year"
+              },
+              grid: { display: false }
+            },
+            y: {
+              position: "right",
+              beginAtZero: true,
+              title: {
+                display: true,
+                text: "Citations"
+              },
+              ticks: {
+                precision: 0
+              },
+              grid: { color: "#ddd" }
+            }
           }
         }
-      }
-    });
+      });
+    }
 
+    /*
+    // Paper display section commented out
     const container = document.getElementById("papers-container");
 
     data.papers.forEach(paper => {
@@ -552,9 +581,10 @@ fetch("./scholar.json")
 
       container.appendChild(div);
     });
-
-
-
+    */
+  })
+  .catch(error => {
+    console.error("Error loading scholar.json:", error);
   });
 </script>
 

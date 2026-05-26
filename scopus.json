@@ -1,0 +1,134 @@
+{
+  "source": "Scopus",
+  "author_id": "57212165779",
+  "total_documents": 14,
+  "total_citations": 77,
+  "papers": [
+    {
+      "title": "Simulation of stroke gait impairment correction using cable-driven lower limb rehabilitation exoskeleton (C-LREX)",
+      "authors": "Prasad R.",
+      "venue": "Wearable Technologies",
+      "year": "2025",
+      "doi": "10.1017/wtc.2025.10013",
+      "citations": 2,
+      "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105012825965&origin=inward"
+    },
+    {
+      "title": "Cable Driven Elephant Trunk-Inspired Robot: Analytical Derivatives and Computational Insights",
+      "authors": "Prasad R.",
+      "venue": "2025 6th International Conference on Artificial Intelligence Robotics and Control Airc 2025",
+      "year": "2025",
+      "doi": "10.1109/AIRC64931.2025.11077512",
+      "citations": 0,
+      "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105012201245&origin=inward"
+    },
+    {
+      "title": "Muscle-inspired bi-planar cable routing: a novel framework for designing cable driven lower limb rehabilitation exoskeletons (C-LREX)",
+      "authors": "Prasad R.",
+      "venue": "Scientific Reports",
+      "year": "2024",
+      "doi": "10.1038/s41598-024-55785-0",
+      "citations": 14,
+      "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85186562040&origin=inward"
+    },
+    {
+      "title": "Participants tend to Synchronize with the Tibetan Singing Bowl",
+      "authors": "Prasad R.",
+      "venue": "2024 13th Conference of the European Study Group on Cardiovascular Oscillations Physiologically Guided Signal Processing of Cardiovascular and Cerebrovascular Oscillations Esgco 2024",
+      "year": "2024",
+      "doi": "10.1109/ESGCO63003.2024.10767056",
+      "citations": 0,
+      "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85213501276&origin=inward"
+    },
+    {
+      "title": "Multiscaled crucial events complexity analysis of heart rate signals during Tibetan singing bowls meditation",
+      "authors": "Nasrat S.",
+      "venue": "2024 13th Conference of the European Study Group on Cardiovascular Oscillations Physiologically Guided Signal Processing of Cardiovascular and Cerebrovascular Oscillations Esgco 2024",
+      "year": "2024",
+      "doi": "10.1109/ESGCO63003.2024.10766966",
+      "citations": 2,
+      "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85213509048&origin=inward"
+    },
+    {
+      "title": "Baevsky's Stress Index as a Sensitive Indicator for Biofeedback Efficacy in Medical Students: A Pilot Study",
+      "authors": "Ihsan Khan M.S.",
+      "venue": "Proceedings of the Annual International Conference of the IEEE Engineering in Medicine and Biology Society EMBS",
+      "year": "2024",
+      "doi": "10.1109/EMBC53108.2024.10782708",
+      "citations": 2,
+      "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85214995358&origin=inward"
+    },
+    {
+      "title": "Assisting Stroke Gait with Cable Driven Lower Limb Rehabilitation Exoskeleton (C-LREX): Simulation Study",
+      "authors": "Prasad R.",
+      "venue": "ACM International Conference Proceeding Series",
+      "year": "2023",
+      "doi": "10.1145/3620679.3620691",
+      "citations": 0,
+      "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85180532633&origin=inward"
+    },
+    {
+      "title": "Bi-Planar Trajectory Tracking with a Novel 3DOF Cable Driven Lower Limb Rehabilitation Exoskeleton (C-LREX)",
+      "authors": "Prasad R.",
+      "venue": "Sensors",
+      "year": "2023",
+      "doi": "10.3390/s23031677",
+      "citations": 10,
+      "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85147892784&origin=inward"
+    },
+    {
+      "title": "Influence of Controller on Cable Driven Lower Limb Rehabilitation Exoskeleton (C-LREX): PD vs MPC",
+      "authors": "Prasad R.",
+      "venue": "9th 2023 International Conference on Control Decision and Information Technologies Codit 2023",
+      "year": "2023",
+      "doi": "10.1109/CoDIT58514.2023.10284066",
+      "citations": 4,
+      "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85177430927&origin=inward"
+    },
+    {
+      "title": "Complex Correlation Method Identifies Efficacy of One-week Mindfulness Training in College Students",
+      "authors": "Alani F.M.",
+      "venue": "Computing in Cardiology",
+      "year": "2023",
+      "doi": "10.22489/CinC.2023.317",
+      "citations": 1,
+      "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85182314904&origin=inward"
+    },
+    {
+      "title": "A Framework for Determining the Performance and Requirements of Cable-Driven Mobile Lower Limb Rehabilitation Exoskeletons",
+      "authors": "Prasad R.",
+      "venue": "Frontiers in Bioengineering and Biotechnology",
+      "year": "2022",
+      "doi": "10.3389/fbioe.2022.920462",
+      "citations": 16,
+      "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85133588775&origin=inward"
+    },
+    {
+      "title": "A Generalized Framework for the Assessment of Various Configurations of Cable-Driven Mobile Lower Limb Rehabilitation Exoskeletons",
+      "authors": "Prasad R.",
+      "venue": "ACM International Conference Proceeding Series",
+      "year": "2022",
+      "doi": "10.1145/3535694.3535716",
+      "citations": 6,
+      "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85133563299&origin=inward"
+    },
+    {
+      "title": "Hierarchical coordinated control distribution and experimental verification for six-wheeled unmanned ground vehicles",
+      "authors": "Prasad R.",
+      "venue": "Proceedings of the Institution of Mechanical Engineers Part D Journal of Automobile Engineering",
+      "year": "2021",
+      "doi": "10.1177/0954407020940823",
+      "citations": 9,
+      "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85088367457&origin=inward"
+    },
+    {
+      "title": "Hierarchical Control Coordination Strategy of Six Wheeled Independent Drive (6WID) Skid Steering Vehicle",
+      "authors": "Prasad R.",
+      "venue": "IFAC Papersonline",
+      "year": "2019",
+      "doi": "10.1016/j.ifacol.2019.09.010",
+      "citations": 11,
+      "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85076086491&origin=inward"
+    }
+  ]
+}

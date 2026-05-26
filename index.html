@@ -231,6 +231,21 @@
 	  border-left: 3px solid #999;
 	}
 	
+	
+	.scopus-paper {
+	  margin-bottom: 16px;
+	}
+
+	.scopus-paper a {
+	  color: var(--accent);
+	  text-decoration: none;
+	}
+
+	.scopus-paper a:hover {
+	  text-decoration: underline;
+	}
+	
+	
   </style>
 </head>
 <body>
@@ -333,6 +348,7 @@
       </div>
     </section>
 
+<!--
     <section>
       <h2>Publications</h2>
       <h3>Journal Articles</h3>
@@ -368,6 +384,7 @@
       <p>Q1 Journal Papers: 6+</p>
       <p>IEEE/ACM Conference Papers: Multiple</p>
     </section>
+-->
 
     <section>
       <h2>Selected Research Projects</h2>
@@ -587,6 +604,146 @@ fetch("./scholar.json")
     console.error("Error loading scholar.json:", error);
   });
 </script>
+
+
+<section>
+  <h2>Scopus Profile</h2>
+
+  <p>Author ID: <span id="scopus-author-id">--</span></p>
+  <p>Total Documents: <span id="scopus-documents">--</span></p>
+  <p>Total Citations: <span id="scopus-citations">--</span></p>
+
+  <h3>Scopus-indexed Publications</h3>
+  <div id="scopus-papers"></div>
+</section>
+<script>
+fetch("./scopus.json")
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("scopus-author-id").textContent =
+      data.author_id || "--";
+
+    document.getElementById("scopus-documents").textContent =
+      data.total_documents || "--";
+
+    document.getElementById("scopus-citations").textContent =
+      data.total_citations || "--";
+
+    const container = document.getElementById("scopus-papers");
+
+    data.papers.forEach(paper => {
+      const div = document.createElement("div");
+      div.className = "scopus-paper";
+
+      div.innerHTML = `
+        <p>
+          <strong>${paper.title}</strong><br>
+          ${paper.authors || ""}<br>
+          <em>${paper.venue || ""}</em>, ${paper.year || ""}<br>
+          Citations: ${paper.citations || 0}
+          ${paper.doi ? `<br>DOI: <a href="https://doi.org/${paper.doi}" target="_blank">${paper.doi}</a>` : ""}
+          ${paper.url ? `<br><a href="${paper.url}" target="_blank">View in Scopus</a>` : ""}
+        </p>
+      `;
+
+      container.appendChild(div);
+    });
+  })
+  .catch(error => {
+    console.error("Scopus data failed to load:", error);
+  });
+</script>
+
+
+<h3>Scopus Publication Timeline</h3>
+<canvas id="scopusTimeline"></canvas>
+
+<h3>Most Cited Scopus Papers</h3>
+<div id="scopusTopPapers"></div>
+
+<script>
+fetch("./scopus.json")
+  .then(response => response.json())
+  .then(data => {
+    const papers = data.papers || data.documents || [];
+
+    // Timeline by year
+    const yearCounts = {};
+
+    papers.forEach(paper => {
+      const year =
+        paper.year ||
+        paper.coverDate?.substring(0, 4) ||
+        paper["prism:coverDate"]?.substring(0, 4);
+
+      if (year) {
+        yearCounts[year] = (yearCounts[year] || 0) + 1;
+      }
+    });
+
+    const years = Object.keys(yearCounts).sort();
+    const counts = years.map(year => yearCounts[year]);
+
+    new Chart(document.getElementById("scopusTimeline"), {
+      type: "line",
+      data: {
+        labels: years,
+        datasets: [{
+          label: "Publications",
+          data: counts,
+          borderWidth: 2,
+          tension: 0.35,
+          fill: false
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: { precision: 0 }
+          }
+        }
+      }
+    });
+
+    // Most cited papers
+    const topPapers = [...papers]
+      .sort((a, b) => {
+        const ca = Number(a.citations || a["citedby-count"] || 0);
+        const cb = Number(b.citations || b["citedby-count"] || 0);
+        return cb - ca;
+      })
+      .slice(0, 5);
+
+    const container = document.getElementById("scopusTopPapers");
+
+    topPapers.forEach(paper => {
+      const title = paper.title || paper["dc:title"] || "Untitled";
+      const source = paper.source || paper["prism:publicationName"] || "";
+      const citations = paper.citations || paper["citedby-count"] || 0;
+
+      const div = document.createElement("div");
+      div.className = "paper-entry";
+      div.innerHTML = `
+        <p>
+          <strong>${title}</strong><br>
+          <em>${source}</em><br>
+          Scopus citations: ${citations}
+        </p>
+      `;
+      container.appendChild(div);
+    });
+  });
+</script>
+
+
+
+
+
 
 
 

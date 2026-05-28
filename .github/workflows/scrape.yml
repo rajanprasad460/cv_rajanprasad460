@@ -35,6 +35,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add Data/
+          git add scopus.json scholar.json
           git commit -m "Updated User Scopus and Scholar data" || echo "No changes"
           git push

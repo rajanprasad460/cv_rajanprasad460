@@ -1,16 +1,25 @@
 {
   "source": "Scopus",
   "author_id": "57212165779",
-  "total_documents": 14,
-  "total_citations": 77,
+  "total_documents": 15,
+  "total_citations": 79,
   "papers": [
+    {
+      "title": "A Systematic Literature Review on Intelligent Soft Hand Exoskeleton Robots: Artificial Intelligence-Enabled Personalisation, Adaptation, and Design Considerations",
+      "authors": "Joseph S.",
+      "venue": "Robotics",
+      "year": "2026",
+      "doi": "10.3390/robotics15050099",
+      "citations": 0,
+      "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105040205721&origin=inward"
+    },
     {
       "title": "Simulation of stroke gait impairment correction using cable-driven lower limb rehabilitation exoskeleton (C-LREX)",
       "authors": "Prasad R.",
       "venue": "Wearable Technologies",
       "year": "2025",
       "doi": "10.1017/wtc.2025.10013",
-      "citations": 2,
+      "citations": 3,
       "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105012825965&origin=inward"
     },
     {
@@ -28,7 +37,7 @@
       "venue": "Scientific Reports",
       "year": "2024",
       "doi": "10.1038/s41598-024-55785-0",
-      "citations": 14,
+      "citations": 15,
       "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85186562040&origin=inward"
     },
     {

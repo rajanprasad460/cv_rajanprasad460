@@ -2,7 +2,7 @@
   "source": "Scopus",
   "author_id": "57212165779",
   "total_documents": 15,
-  "total_citations": 87,
+  "total_citations": 88,
   "papers": [
     {
       "title": "A Systematic Literature Review on Intelligent Soft Hand Exoskeleton Robots: Artificial Intelligence-Enabled Personalisation, Adaptation, and Design Considerations",
@@ -10,7 +10,7 @@
       "venue": "Robotics",
       "year": "2026",
       "doi": "10.3390/robotics15050099",
-      "citations": 0,
+      "citations": 1,
       "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105040205721&origin=inward"
     },
     {

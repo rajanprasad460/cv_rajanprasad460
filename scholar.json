@@ -1,33 +1,42 @@
 {
   "name": "Rajan Prasad",
   "citations": {
-    "all": 85,
-    "since_2021": 84
+    "all": 100,
+    "since_2021": 98
   },
   "h_index": {
     "all": 6,
     "since_2021": 6
   },
   "i10_index": {
-    "all": 4,
-    "since_2021": 4
+    "all": 5,
+    "since_2021": 5
   },
   "citations_per_year": {
-    "2020": 1,
-    "2021": 3,
+    "2020": 2,
+    "2021": 2,
     "2022": 8,
     "2023": 15,
     "2024": 11,
-    "2025": 30,
-    "2026": 17
+    "2025": 31,
+    "2026": 31
   },
   "papers": [
+    {
+      "title": "Muscle-inspired bi-planar cable routing: a novel framework for designing cable driven lower limb rehabilitation exoskeletons (C-LREX)",
+      "authors": "Rajan Prasad and Marwan El-Rich and Mohammad I Awad and Sunil K Agrawal and Kinda Khalaf",
+      "venue": "",
+      "year": 2024,
+      "citations": 19,
+      "url": "https://www.nature.com/articles/s41598-024-55785-0",
+      "bibtex": ""
+    },
     {
       "title": "A framework for determining the performance and requirements of cable-driven mobile lower limb rehabilitation exoskeletons",
       "authors": "Rajan Prasad and Marwan El-Rich and Mohammad I Awad and Irfan Hussain and HF Jelinek and Umer Huzaifa and Kinda Khalaf",
       "venue": "",
       "year": 2022,
-      "citations": 15,
+      "citations": 17,
       "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2022.920462/full",
       "bibtex": ""
     },
@@ -36,17 +45,17 @@
       "authors": "Rajan Prasad and Yue Ma",
       "venue": "",
       "year": 2019,
-      "citations": 15,
+      "citations": 16,
       "url": "https://www.sciencedirect.com/science/article/pii/S2405896319306299",
       "bibtex": ""
     },
     {
-      "title": "Muscle-inspired bi-planar cable routing: a novel framework for designing cable driven lower limb rehabilitation exoskeletons (C-LREX)",
+      "title": "Bi-planar trajectory tracking with a novel 3dof cable driven lower limb rehabilitation exoskeleton (c-lrex)",
       "authors": "Rajan Prasad and Marwan El-Rich and Mohammad I Awad and Sunil K Agrawal and Kinda Khalaf",
       "venue": "",
-      "year": 2024,
-      "citations": 14,
-      "url": "https://www.nature.com/articles/s41598-024-55785-0",
+      "year": 2023,
+      "citations": 12,
+      "url": "https://www.mdpi.com/1424-8220/23/3/1677",
       "bibtex": ""
     },
     {
@@ -56,15 +65,6 @@
       "year": 2021,
       "citations": 10,
       "url": "https://journals.sagepub.com/doi/abs/10.1177/0954407020940823",
-      "bibtex": ""
-    },
-    {
-      "title": "Bi-planar trajectory tracking with a novel 3dof cable driven lower limb rehabilitation exoskeleton (c-lrex)",
-      "authors": "Rajan Prasad and Marwan El-Rich and Mohammad I Awad and Sunil K Agrawal and Kinda Khalaf",
-      "venue": "",
-      "year": 2023,
-      "citations": 9,
-      "url": "https://www.mdpi.com/1424-8220/23/3/1677",
       "bibtex": ""
     },
     {
@@ -90,7 +90,7 @@
       "authors": "Rajan Prasad and Marwan El-Rich and Mohammad I Awad and Kinda Khalaf",
       "venue": "",
       "year": 2025,
-      "citations": 3,
+      "citations": 4,
       "url": "https://www.cambridge.org/core/journals/wearable-technologies/article/simulation-of-stroke-gait-impairment-correction-using-cabledriven-lower-limb-rehabilitation-exoskeleton-clrex/CC22DFE4A3762BF20494DE901C05DE1A",
       "bibtex": ""
     },
@@ -104,12 +104,30 @@
       "bibtex": ""
     },
     {
+      "title": "A Systematic Literature Review on Intelligent Soft Hand Exoskeleton Robots: Artificial Intelligence-Enabled Personalisation, Adaptation, and Design Considerations",
+      "authors": "Seena Joseph and Wai Keung Fung and Tony Punnoose Valayil and Rajan Prasad and Tim Bashford",
+      "venue": "",
+      "year": 2026,
+      "citations": 2,
+      "url": "https://www.mdpi.com/2218-6581/15/5/99",
+      "bibtex": ""
+    },
+    {
       "title": "Multiscaled crucial events complexity analysis of heart rate signals during Tibetan singing bowls meditation",
       "authors": "Sara Nasrat and Rajan Prasad and Zakia Dimassi and Eman Alefishat and Ahsan Khandoker and Herbert F Jelinek",
       "venue": "",
       "year": 2024,
       "citations": 2,
       "url": "https://ieeexplore.ieee.org/abstract/document/10766966/",
+      "bibtex": ""
+    },
+    {
+      "title": "Cable Driven Elephant Trunk-Inspired Robot: Analytical Derivatives and Computational Insights",
+      "authors": "Rajan Prasad and Abdur Rosyid and Federico Renda and Bashar El-Khasawneh",
+      "venue": "",
+      "year": 2025,
+      "citations": 1,
+      "url": "https://ieeexplore.ieee.org/abstract/document/11077512/",
       "bibtex": ""
     },
     {
@@ -128,24 +146,6 @@
       "year": 2023,
       "citations": 1,
       "url": "https://ieeexplore.ieee.org/abstract/document/10363932/",
-      "bibtex": ""
-    },
-    {
-      "title": "A Systematic Literature Review on Intelligent Soft Hand Exoskeleton Robots: Artificial Intelligence-Enabled Personalisation, Adaptation, and Design Considerations",
-      "authors": "Seena Joseph and Wai Keung Fung and Tony Punnoose Valayil and Rajan Prasad and Tim Bashford",
-      "venue": "",
-      "year": 2026,
-      "citations": 0,
-      "url": "https://www.mdpi.com/2218-6581/15/5/99",
-      "bibtex": ""
-    },
-    {
-      "title": "Cable Driven Elephant Trunk-Inspired Robot: Analytical Derivatives and Computational Insights",
-      "authors": "Rajan Prasad and Abdur Rosyid and Federico Renda and Bashar El-Khasawneh",
-      "venue": "",
-      "year": 2025,
-      "citations": 0,
-      "url": "https://ieeexplore.ieee.org/abstract/document/11077512/",
       "bibtex": ""
     },
     {
